@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 font-body",
   {
     variants: {
       variant: {
@@ -15,11 +15,16 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        gold: "bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-bold tracking-wide shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]",
+        goldOutline: "border-2 border-gold text-gold bg-transparent hover:bg-gold/10 font-semibold tracking-wide",
+        hero: "bg-gradient-to-r from-gold via-gold-light to-gold text-primary-foreground font-bold text-lg tracking-wide shadow-[0_0_60px_hsl(43_74%_53%_/_0.4)] hover:shadow-[0_0_80px_hsl(43_74%_53%_/_0.6)] transform hover:scale-[1.03] active:scale-[0.98]",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-12 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-base",
+        hero: "h-16 rounded-lg px-12 text-lg",
         icon: "h-10 w-10",
       },
     },
