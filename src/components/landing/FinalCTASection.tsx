@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const FinalCTASection = () => {
   const scrollToPrice = () => {
-    document.getElementById('price-section')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('price-section')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="py-24 bg-gradient-to-b from-background to-card relative overflow-hidden">
+  return <section className="py-24 bg-gradient-to-b from-background to-card relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(43_74%_53%_/_0.1)_0%,transparent_50%)]" />
       
@@ -23,23 +22,16 @@ const FinalCTASection = () => {
             és végre te irányítsd a beszélgetéseket.
           </p>
 
-          <Button 
-            variant="hero" 
-            size="hero" 
-            onClick={scrollToPrice}
-            className="group"
-          >
+          <Button variant="hero" size="hero" onClick={scrollToPrice} className="group">
             <span>Megveszem most – 4.990 Ft</span>
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Button>
 
           <p className="text-muted-foreground text-sm mt-6">
-            Azonnali hozzáférés • 14 napos garancia • Biztonságos fizetés
+            Azonnali hozzáférés  • Biztonságos fizetés
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FinalCTASection;
