@@ -3,23 +3,23 @@ import { AlertTriangle, Heart, Briefcase, MessageSquare } from "lucide-react";
 const problems = [
   {
     icon: Briefcase,
-    title: "Munkahelyi manipuláció",
-    description: "Kollégák vagy főnökök, akik kihasználják a jóindulatodat és a munkádat maguknak tulajdonítják."
-  },
-  {
-    icon: Heart,
-    title: "Kapcsolati játszmák",
-    description: "Érzelmi zsarolás, bűntudatkeltés és passzív-agresszív kommunikáció a párkapcsolatban."
+    title: "Bűntudatkeltés",
+    description: "Bűntudatot keltenek benned, amikor nemet mondasz."
   },
   {
     icon: MessageSquare,
-    title: "Verbális alárendelés",
-    description: "Beszélgetések, ahol mindig te húzod a rövidebbet – és csak utólag jössz rá."
+    title: "Elvesztett beszélgetések",
+    description: "A beszélgetések végére valahogy mindig ők kerülnek fölénybe."
+  },
+  {
+    icon: Heart,
+    title: "Csavarás ellened",
+    description: "Utólag jössz rá, hogy átcsavarták a történetet ellened."
   },
   {
     icon: AlertTriangle,
-    title: "Gaslighting és bűntudatkeltés",
-    description: "Amikor megkérdőjelezik az érzéseidet és a valóságérzékedet."
+    title: "Határállítási nehézség",
+    description: "Feszengsz, amikor határt kell húzni."
   }
 ];
 
@@ -63,9 +63,9 @@ const ProblemSection = () => {
 
         <div className="text-center mt-16">
           <p className="text-xl md:text-2xl text-foreground font-light">
-            Ideje, hogy{" "}
-            <span className="text-gold font-semibold">átláss a játszmákon</span>
-            {" "}és visszavedd az irányítást.
+            Itt az idő, hogy{" "}
+            <span className="text-gold font-semibold">átlásd a játszmákat</span>
+            {" "}— és visszavedd az irányítást.
           </p>
         </div>
       </div>

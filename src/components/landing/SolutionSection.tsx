@@ -3,22 +3,22 @@ import { Eye, Shield, Target, Zap } from "lucide-react";
 const solutions = [
   {
     icon: Eye,
-    title: "Felismered a rejtett játszmákat",
+    title: "10 másodperc alatt felismered a játszmákat.",
     description: "Megtanulod azonosítani a manipuláció jeleit, mielőtt áldozattá válnál."
   },
   {
     icon: Shield,
-    title: "Semlegesíted az érzelmi nyomást",
+    title: "Visszavágó mondatokkal leállítod a manipulátort.",
     description: "Gyakorlati technikák az érzelmi zsarolás és bűntudatkeltés kivédésére."
   },
   {
     icon: Target,
-    title: "Verbális kontrollt nyersz",
+    title: "Magabiztosan kommunikálsz konfliktus nélkül.",
     description: "Beszélgetési forgatókönyvek, amikkel magabiztos maradhatsz bármely helyzetben."
   },
   {
     icon: Zap,
-    title: "Megvéded a határaidat",
+    title: "Megtanulsz határt húzni úgy, hogy tiszteletet kapj.",
     description: "Megtanulsz nemet mondani konfliktus nélkül – és tiszteletet parancsolni."
   }
 ];

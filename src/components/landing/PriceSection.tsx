@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, ShieldCheck, Zap, FileText, Gift } from "lucide-react";
+import { Check, ShieldCheck, Zap, FileText, Gift, Smartphone } from "lucide-react";
 
 const PriceSection = () => {
   return (
@@ -25,8 +25,8 @@ const PriceSection = () => {
                 </h2>
                 
                 {/* Price */}
-                <div className="flex items-center justify-center gap-3 mb-4">
-                  <span className="text-muted-foreground line-through text-2xl">9.990 Ft</span>
+                <div className="mb-2">
+                  <p className="text-muted-foreground text-sm mb-2">Csomag értéke: <span className="line-through">9.970 Ft</span></p>
                   <span className="font-display text-5xl md:text-6xl font-bold text-gradient-gold">
                     4.990 Ft
                   </span>
@@ -50,26 +50,26 @@ const PriceSection = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                      <Gift className="w-3.5 h-3.5 text-gold" />
-                    </div>
-                    <span className="text-foreground">
-                      <strong>BÓNUSZ:</strong> 10 azonnal használható válasz PDF
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                      <Gift className="w-3.5 h-3.5 text-gold" />
-                    </div>
-                    <span className="text-foreground">
-                      <strong>BÓNUSZ:</strong> Mentális pajzs cheat-sheet
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
                       <Zap className="w-3.5 h-3.5 text-gold" />
                     </div>
                     <span className="text-foreground">
                       <strong>Azonnali</strong> digitális hozzáférés
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
+                      <Smartphone className="w-3.5 h-3.5 text-gold" />
+                    </div>
+                    <span className="text-foreground">
+                      <strong>Mobilon</strong> is olvasható
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
+                      <ShieldCheck className="w-3.5 h-3.5 text-gold" />
+                    </div>
+                    <span className="text-foreground">
+                      <strong>14 napos</strong> garancia
                     </span>
                   </div>
                 </div>
@@ -79,9 +79,25 @@ const PriceSection = () => {
                   Igen, kérem a TITKOS TUDÁST
                 </Button>
 
+                {/* Under CTA */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-muted-foreground text-sm mb-6">
+                  <span className="flex items-center gap-1.5">
+                    <Check className="w-4 h-4 text-gold" />
+                    Azonnali hozzáférés
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Check className="w-4 h-4 text-gold" />
+                    Biztonságos fizetés
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Check className="w-4 h-4 text-gold" />
+                    2 bónusz PDF ajándékba
+                  </span>
+                </div>
+
                 {/* Guarantee */}
                 <div className="flex items-center justify-center gap-3 p-4 rounded-xl bg-surface-elevated border border-border">
-                  <ShieldCheck className="w-8 h-8 text-gold flex-shrink-0" />
+                  <Gift className="w-8 h-8 text-gold flex-shrink-0" />
                   <div className="text-left">
                     <p className="font-semibold text-foreground text-sm">
                       14 napos pénzvisszafizetési garancia

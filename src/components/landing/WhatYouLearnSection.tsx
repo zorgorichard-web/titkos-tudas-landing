@@ -1,14 +1,14 @@
 import { Check } from "lucide-react";
 
 const learnings = [
-  "A leggyakoribb sötét pszichológiai technikák",
-  "Manipulációs jelek, amit az emberek 99%-a nem vesz észre",
-  "Hogyan állítsd le az érzelmi nyomásgyakorlást",
-  "Dominancia-visszafordító beszélgetési forgatókönyvek",
-  "Határállítás konfliktus nélkül",
-  "Verbális önvédelem mesterfogásai",
-  "Munkahelyi hatalmi játszmák felismerése",
-  "Párkapcsolati manipuláció semlegesítése"
+  "A legismertebb sötét pszichológiai technikák",
+  "Hogyan manipulálnak hétköznapi helyzetekben",
+  "10 leggyakoribb támadó mondat és mit válaszolj",
+  "Munkahelyi és párkapcsolati red flag-ek",
+  "Hogyan védd a határaid veszekedés nélkül",
+  "Mit mondj vissza, amikor sarokba akarnak szorítani",
+  "Dominancia visszafordító beszélgetési minták",
+  "20 valós élethelyzet lebontása"
 ];
 
 const WhatYouLearnSection = () => {
