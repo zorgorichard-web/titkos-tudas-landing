@@ -8,7 +8,8 @@ const learnings = [
   "Hogyan védd a határaid veszekedés nélkül",
   "Mit mondj vissza, amikor sarokba akarnak szorítani",
   "Dominancia visszafordító beszélgetési minták",
-  "20 valós élethelyzet lebontása"
+  "20 valós élethelyzet lebontása",
+  "25+ kész mondat, amit bármilyen manipulációs helyzetben használhatsz"
 ];
 
 const WhatYouLearnSection = () => {
