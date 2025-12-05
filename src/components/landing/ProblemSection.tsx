@@ -13,7 +13,7 @@ const problems = [
   },
   {
     icon: Heart,
-    title: "Csavarás ellened",
+    title: "Gaslighting",
     description: "Utólag jössz rá, hogy átcsavarták a történetet ellened."
   },
   {
