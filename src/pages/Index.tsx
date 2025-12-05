@@ -9,10 +9,12 @@ import PriceSection from "@/components/landing/PriceSection";
 import FAQSection from "@/components/landing/FAQSection";
 import FinalCTASection from "@/components/landing/FinalCTASection";
 import Footer from "@/components/landing/Footer";
+import UrgencyBanner from "@/components/landing/UrgencyBanner";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background overflow-x-hidden">
+    <main className="min-h-screen bg-background overflow-x-hidden pt-16 sm:pt-14">
+      <UrgencyBanner />
       <HeroSection />
       <ProblemSection />
       <SolutionSection />
