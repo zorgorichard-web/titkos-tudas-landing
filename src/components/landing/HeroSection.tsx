@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, ChevronDown } from "lucide-react";
+import { Shield, ChevronDown, Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -36,10 +36,14 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 font-light mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-up delay-200">
-            A sötét pszichológia valódi eszközei, hogy{" "}
-            <span className="text-gold font-medium">többé ne manipuláljanak</span>{" "}
-            – és végre te irányíts
+          <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 font-light mb-4 max-w-3xl mx-auto leading-relaxed animate-fade-up delay-200">
+            A sötét pszichológia eszközei, hogy{" "}
+            <span className="text-gold font-medium">többé senki ne játsszon veled.</span>
+          </p>
+
+          {/* Micro proof */}
+          <p className="text-muted-foreground text-sm md:text-base mb-8 animate-fade-up delay-250">
+            3 nap alatt 250.000+ TikTok megtekintés – ez a téma felrobbant.
           </p>
 
           {/* Emotional Hook */}
@@ -60,11 +64,22 @@ const HeroSection = () => {
               onClick={scrollToPrice}
               className="group"
             >
-              <span>Letöltöm most – 4.990 Ft</span>
+              <span>Igen, kérem a TITKOS TUDÁST</span>
             </Button>
-            <p className="text-muted-foreground text-sm mt-4">
-              Azonnali digitális hozzáférés • 14 napos garancia
-            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4 text-muted-foreground text-sm">
+              <span className="flex items-center gap-1.5">
+                <Check className="w-4 h-4 text-gold" />
+                Azonnali hozzáférés
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Check className="w-4 h-4 text-gold" />
+                Mobilon is tökéletes
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Check className="w-4 h-4 text-gold" />
+                14 napos garancia
+              </span>
+            </div>
           </div>
         </div>
 

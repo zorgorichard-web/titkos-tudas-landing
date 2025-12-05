@@ -3,17 +3,17 @@ import { Gift, FileText, Zap } from "lucide-react";
 const bonuses = [
   {
     icon: FileText,
-    title: "10 azonnal használható válasz",
-    subtitle: "manipuláció ellen",
+    title: "10 azonnal használható válasz manipuláció ellen",
+    subtitle: "(helyzet + mondat + hatás)",
     description: "Kész mondatok, amiket bármikor bevetésre kész formában használhatsz a hétköznapokban.",
-    value: "2.990 Ft értékben"
+    value: "Értéke: 2.990 Ft"
   },
   {
     icon: Zap,
-    title: "Mentális pajzs",
-    subtitle: "gyorstanfolyam cheat-sheet",
+    title: "Mentális Pajzs – Gyorsvédelmi Zsebútmutató",
+    subtitle: "(gyors checklist krízishelyzetekre)",
     description: "Egy oldalas összefoglaló a legfontosabb védekezési technikákról – mindig kéznél.",
-    value: "1.990 Ft értékben"
+    value: "Értéke: 1.990 Ft"
   }
 ];
 
@@ -70,6 +70,10 @@ const BonusSection = () => {
             </div>
           ))}
         </div>
+
+        <p className="text-center text-lg text-foreground mt-10 font-medium">
+          Ma mindkét bónuszt <span className="text-gold">ingyen</span> megkapod a TITKOS TUDÁS mellé.
+        </p>
       </div>
     </section>
   );

@@ -1,25 +1,35 @@
-import { Users, Briefcase, Heart, Brain } from "lucide-react";
+import { Users, Briefcase, Heart, Brain, Shield, MessageSquare } from "lucide-react";
 
 const audiences = [
   {
+    icon: Heart,
+    title: "Akiket már ért érzelmi manipuláció",
+    description: "És szeretnék elkerülni, hogy újra megtörténjen."
+  },
+  {
     icon: Users,
-    title: "Akik elegük van abból, hogy kihasználják őket",
-    description: "Érzelmileg és mentálisan egyaránt."
+    title: "Akik érzik, hogy néha kihasználják őket",
+    description: "De nem tudják pontosan megfogalmazni, hogyan."
+  },
+  {
+    icon: MessageSquare,
+    title: "Akik szeretnének végre magabiztosan kommunikálni",
+    description: "Konfliktushelyzetekben is megőrizve a kontrollt."
   },
   {
     icon: Brain,
-    title: "Akik erősebb jelenlétre vágynak",
-    description: "Magabiztosabb fellépést szeretnének társas helyzetekben."
+    title: "Introvertáltaknak, akik verbális védelmet akarnak",
+    description: "Kész mondatok és forgatókönyvek, amiket azonnal használhatsz."
+  },
+  {
+    icon: Shield,
+    title: "Akik tiszta határokat szeretnének",
+    description: "Anélkül, hogy folyton magyarázkodni kellene."
   },
   {
     icon: Briefcase,
-    title: "Munkahelyi harcosoknak",
-    description: "Akik tisztességes előrelépést akarnak a politizálás helyett."
-  },
-  {
-    icon: Heart,
-    title: "Kapcsolati egyensúlyra vágyóknak",
-    description: "Akik egészséges dinamikát szeretnének a párkapcsolatban."
+    title: "Akik nem akarnak többé vesztesen kijönni egy beszélgetésből",
+    description: "Sem munkahelyen, sem otthon."
   }
 ];
 
@@ -37,7 +47,7 @@ const WhoIsItForSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {audiences.map((audience, index) => (
             <div 
               key={index}
@@ -47,22 +57,15 @@ const WhoIsItForSection = () => {
                 <div className="p-2 rounded-lg bg-gold/10 group-hover:bg-gold/20 transition-colors">
                   <audience.icon className="w-5 h-5 text-gold" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground">
+                <h3 className="font-display text-base font-semibold text-foreground">
                   {audience.title}
                 </h3>
               </div>
-              <p className="text-muted-foreground ml-12">
+              <p className="text-muted-foreground ml-12 text-sm">
                 {audience.description}
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground text-lg">
-            Ha introvertált vagy és <span className="text-foreground font-medium">verbális páncélra</span> vágysz – 
-            ez neked szól.
-          </p>
         </div>
       </div>
     </section>

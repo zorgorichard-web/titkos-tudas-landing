@@ -5,6 +5,8 @@ import WhatYouLearnSection from "@/components/landing/WhatYouLearnSection";
 import WhoIsItForSection from "@/components/landing/WhoIsItForSection";
 import BonusSection from "@/components/landing/BonusSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
+import BeforeAfterSection from "@/components/landing/BeforeAfterSection";
+import TestimonialSection from "@/components/landing/TestimonialSection";
 import PriceSection from "@/components/landing/PriceSection";
 import FAQSection from "@/components/landing/FAQSection";
 import FinalCTASection from "@/components/landing/FinalCTASection";
@@ -22,6 +24,8 @@ const Index = () => {
       <WhoIsItForSection />
       <BonusSection />
       <AuthoritySection />
+      <BeforeAfterSection />
+      <TestimonialSection />
       <PriceSection />
       <FAQSection />
       <FinalCTASection />
