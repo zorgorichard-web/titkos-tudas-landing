@@ -1,20 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Shield, ChevronDown, Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-
 const HeroSection = () => {
   const scrollToPrice = () => {
-    document.getElementById('price-section')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('price-section')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40" style={{
+        backgroundImage: `url(${heroBg})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,hsl(43_74%_53%_/_0.1)_0%,transparent_50%)]" />
       </div>
@@ -30,9 +28,9 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-up delay-100">
-            <span className="text-gradient-gold">TITKOS</span>
+            <span className="text-gradient-gold">ELME</span>
             <br />
-            <span className="text-foreground">TUDÁS</span>
+            <span className="text-foreground">KÓDEX</span>
           </h1>
 
           {/* Subtitle */}
@@ -58,12 +56,7 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <div className="animate-fade-up delay-400">
-            <Button 
-              variant="hero" 
-              size="hero" 
-              onClick={scrollToPrice}
-              className="group"
-            >
+            <Button variant="hero" size="hero" onClick={scrollToPrice} className="group">
               <span>Igen, kérem a TITKOS TUDÁST</span>
             </Button>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4 text-muted-foreground text-sm">
@@ -88,8 +81,6 @@ const HeroSection = () => {
           <ChevronDown className="w-8 h-8 text-gold/60" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
