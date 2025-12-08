@@ -57,7 +57,7 @@ const HeroSection = () => {
           {/* CTA Button */}
           <div className="animate-fade-up delay-400">
             <Button variant="hero" size="hero" onClick={scrollToPrice} className="group">
-              <span>Igen, kérem a TITKOS TUDÁST</span>
+              <span>Igen, kérem az ELME KÓDEXET    </span>
             </Button>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4 text-muted-foreground text-sm">
               <span className="flex items-center gap-1.5">
