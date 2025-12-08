@@ -1,25 +1,19 @@
 import { Gift, FileText, Zap } from "lucide-react";
-
-const bonuses = [
-  {
-    icon: FileText,
-    title: "10 azonnal használható válasz manipuláció ellen",
-    subtitle: "(helyzet + mondat + hatás)",
-    description: "Kész mondatok, amiket bármikor bevetésre kész formában használhatsz a hétköznapokban.",
-    value: "Értéke: 2.990 Ft"
-  },
-  {
-    icon: Zap,
-    title: "Mentális Pajzs – Gyorsvédelmi Zsebútmutató",
-    subtitle: "(gyors checklist krízishelyzetekre)",
-    description: "Egy oldalas összefoglaló a legfontosabb védekezési technikákról – mindig kéznél.",
-    value: "Értéke: 1.990 Ft"
-  }
-];
-
+const bonuses = [{
+  icon: FileText,
+  title: "10 azonnal használható válasz manipuláció ellen",
+  subtitle: "(helyzet + mondat + hatás)",
+  description: "Kész mondatok, amiket bármikor bevetésre kész formában használhatsz a hétköznapokban.",
+  value: "Értéke: 2.990 Ft"
+}, {
+  icon: Zap,
+  title: "Mentális Pajzs – Gyorsvédelmi Zsebútmutató",
+  subtitle: "(gyors checklist krízishelyzetekre)",
+  description: "Egy oldalas összefoglaló a legfontosabb védekezési technikákról – mindig kéznél.",
+  value: "Értéke: 1.990 Ft"
+}];
 const BonusSection = () => {
-  return (
-    <section className="py-24 bg-gradient-to-b from-background to-card relative overflow-hidden">
+  return <section className="py-24 bg-gradient-to-b from-background to-card relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl" />
       
@@ -39,11 +33,7 @@ const BonusSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {bonuses.map((bonus, index) => (
-            <div 
-              key={index}
-              className="relative group"
-            >
+          {bonuses.map((bonus, index) => <div key={index} className="relative group">
               {/* Border glow */}
               <div className="absolute -inset-px bg-gradient-to-b from-gold/50 via-gold/20 to-transparent rounded-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
               
@@ -67,16 +57,13 @@ const BonusSection = () => {
                   {bonus.description}
                 </p>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         <p className="text-center text-lg text-foreground mt-10 font-medium">
-          Ma mindkét bónuszt <span className="text-gold">ingyen</span> megkapod a TITKOS TUDÁS mellé.
+          Ma mindkét bónuszt <span className="text-gold">ingyen</span> megkapod az ELME KÓDEX mellé.
         </p>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default BonusSection;
