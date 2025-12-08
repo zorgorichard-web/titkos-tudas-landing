@@ -40,9 +40,7 @@ const HeroSection = () => {
           </p>
 
           {/* Micro proof */}
-          <p className="text-muted-foreground text-sm md:text-base mb-8 animate-fade-up delay-250">
-            3 nap alatt 250.000+ TikTok megtekintés – ez a téma felrobbant.
-          </p>
+          
 
           {/* Emotional Hook */}
           <div className="space-y-3 mb-12 animate-fade-up delay-300">
