@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, ShieldCheck, Zap, FileText, Gift, Smartphone } from "lucide-react";
-
 const PriceSection = () => {
-  return (
-    <section id="price-section" className="py-24 bg-gradient-to-b from-card to-background relative overflow-hidden">
+  return <section id="price-section" className="py-24 bg-gradient-to-b from-card to-background relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold/5 rounded-full blur-3xl" />
       
@@ -21,7 +19,7 @@ const PriceSection = () => {
                   Komplett csomag
                 </span>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  TITKOS TUDÁS
+                  ELME KÓDEX 
                 </h2>
                 
                 {/* Price */}
@@ -112,8 +110,6 @@ const PriceSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PriceSection;
