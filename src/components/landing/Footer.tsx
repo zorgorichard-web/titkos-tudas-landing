@@ -1,12 +1,11 @@
 const Footer = () => {
-  return (
-    <footer className="py-12 border-t border-border">
+  return <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
               <p className="font-display text-lg font-semibold text-foreground mb-1">
-                TITKOS TUDÁS
+                ELME KÓDEX 
               </p>
               <p className="text-muted-foreground text-sm">
                 Pszichológiai önvédelem mindenkinek
@@ -33,8 +32,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
