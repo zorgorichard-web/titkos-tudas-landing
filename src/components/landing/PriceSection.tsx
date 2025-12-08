@@ -74,7 +74,7 @@ const PriceSection = () => {
 
                 {/* CTA Button */}
                 <Button variant="hero" size="hero" className="w-full mb-6">
-                  Igen, kérem a TITKOS TUDÁST
+                  Igen, kérem az ELME KÓDEXET
                 </Button>
 
                 {/* Under CTA */}
