@@ -66,10 +66,7 @@ const HeroSection = () => {
                 <Check className="w-4 h-4 text-gold" />
                 Mobilon is tökéletes
               </span>
-              <span className="flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-gold" />
-                14 napos garancia
-              </span>
+              
             </div>
           </div>
         </div>
