@@ -67,7 +67,7 @@ const PriceSection = () => {
                       <ShieldCheck className="w-3.5 h-3.5 text-gold" />
                     </div>
                     <span className="text-foreground">
-                      <strong>14 napos</strong> garancia
+                      <strong>Ajándékba</strong> 2 bónusz 
                     </span>
                   </div>
                 </div>
@@ -97,11 +97,9 @@ const PriceSection = () => {
                 <div className="flex items-center justify-center gap-3 p-4 rounded-xl bg-surface-elevated border border-border">
                   <Gift className="w-8 h-8 text-gold flex-shrink-0" />
                   <div className="text-left">
-                    <p className="font-semibold text-foreground text-sm">
-                      14 napos pénzvisszafizetési garancia
-                    </p>
+                    <p className="font-semibold text-foreground text-sm">2 bónusz PDF-et kapsz ma ajándékba</p>
                     <p className="text-muted-foreground text-xs">
-                      Kérdés nélkül visszakapod a pénzed, ha nem elégedett.
+                      Az ajánlat korlátozott ideig elérhető!    
                     </p>
                   </div>
                 </div>
