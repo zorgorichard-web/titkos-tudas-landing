@@ -43,7 +43,7 @@ const PriceSection = () => {
                       <FileText className="w-3.5 h-3.5 text-gold" />
                     </div>
                     <span className="text-foreground">
-                      <strong>40-60 oldalas</strong> részletes e-book (PDF)
+                      <strong>164 oldalas</strong> részletes e-book (PDF)
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
